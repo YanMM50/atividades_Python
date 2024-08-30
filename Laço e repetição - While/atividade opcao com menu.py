@@ -7,6 +7,7 @@ import os
 os.system("cls || clear")
 
 print("""
+      \t=== Menu ===
 S - Inserir mais uma nota;
 P - Ver quantas notas foram inseridas; 
 N - Calcular a média aretmética das notas informadas.
