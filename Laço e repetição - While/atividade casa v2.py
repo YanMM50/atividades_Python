@@ -12,25 +12,21 @@ caso seja menor que 5, o aluno está reprovado.
 import os
 os.system("cls || clear")
 
-nota_um = float(input("Digite sua primeira nota: "))
-nota_dois = float(input("Digite sua segunda nota: "))
-nota_tres = float(input("Digite sua terceira nota: "))
+QUANTIDADE_DE_REPETICAO = 3
+soma = 0
 
-while True:
-    if nota_um < 0 or nota_um > 10:
-        print("Erro, Digite novamente.")
-        nota_um = float(input("Digite sua primeira nota: "))
-    elif nota_dois < 0 or nota_dois > 10:
-        print("Erro, Digite novamente.")
-        nota_dois = float(input("Digite sua segunda nota: "))
-    elif nota_tres < 0 or nota_tres > 10:
-        print("Erro, Digite novamente.")
-        nota_tres = float(input("Digite sua terceira nota: "))
-    else:
-        break    
+for i in range(QUANTIDADE_DE_REPETICAO):
+    while True:
+        nota = float(input(f"Digite sua {i + 1}º nota: "))
+        soma += 1
+
+        if nota < 0 or nota > 10:
+            print("Erro, Digite novamente.")
+            nota = float(input("Digite sua nota: "))
+        else:
+            break    
 
 
-soma = nota_um + nota_dois + nota_tres
 media = soma / 3
 
 if media >= 7:
