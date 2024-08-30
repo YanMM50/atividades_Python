@@ -18,16 +18,15 @@ nota_tres = float(input("Digite sua terceira nota: "))
 
 while True:
     if nota_um < 0 or nota_um > 10:
-        print("Digite novamente.")
+        print("Erro, Digite novamente.")
         nota_um = float(input("Digite sua primeira nota: "))
     elif nota_dois < 0 or nota_dois > 10:
-        print("Digite novamente.")
+        print("Erro, Digite novamente.")
         nota_dois = float(input("Digite sua segunda nota: "))
     elif nota_tres < 0 or nota_tres > 10:
-        print("Digite novamente.")
+        print("Erro, Digite novamente.")
         nota_tres = float(input("Digite sua terceira nota: "))
     else:
-        print("Bem-vindo!")
         break    
 
 
@@ -36,7 +35,7 @@ media = soma / 3
 
 if media >= 7:
     print("Aprovado")
-elif media == 5 and media <= 6.9:
+elif media == 5 or media <= 6.9:
     print("Recuperação")
 elif media < 5:
     print("Reprovado")

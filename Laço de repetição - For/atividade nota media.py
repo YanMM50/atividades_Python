@@ -4,7 +4,7 @@ os.system("cls || clear")
 soma = 0 
 
 for i in range(3):
-    nota = float(input(f"Digite sua {i + 1 }º nota: "))
+    nota = float(input(f"Digite sua {i + 1}º nota: "))
     soma = soma + nota
 
 media = soma / 3 

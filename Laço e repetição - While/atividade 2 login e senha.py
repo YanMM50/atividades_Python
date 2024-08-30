@@ -25,8 +25,8 @@ while True:
             break
 
     else: 
-        print(f"login ou senha invalidos. {4 - tentativas} restantes.")
-        tentativas += 1
+        print(f"login ou senha invalidos. {3 - tentativas} restantes.")
+        tentativas += 1 #tentativas = tentativas + 1
         
         if tentativas > QUANTIDADE_DE_REPETICAO:
             print("Limite de tentativas atingido.")
