@@ -14,10 +14,10 @@ while True:
     match opcao: 
         case "S":
             nota = float(input("Digite sua nota: "))
-            iteracoes += 1
             if nota < 0 or nota > 10:
                 print("Nota tem que ser maior que 0 e menor que 10.")
                 break     
+            iteracoes += 1
             soma = soma + nota
             opcao = input("Deseja inserir outra nota S or N? ").upper() 
         case "N":

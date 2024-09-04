@@ -15,5 +15,5 @@ while True:
 
     if soma > TOTAL_DE_GASTOS:
         print("Limite atingido!")
-        print(f"Total de gastos; {soma}")
+        print(f"Total de gastos: {soma}")
         break
