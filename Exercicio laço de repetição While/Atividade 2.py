@@ -6,13 +6,14 @@ Escreva um programa que use um laço while para encontrar o primeiro número mai
 import os
 os.system("cls || clear")
 
+VARIAVEL_INICIAL = 51
+
 while True:
     numero = int(input("Digite um número: "))
 
-    if numero > 51 and numero % 7 == 0:
+    if numero > VARIAVEL_INICIAL and numero % 7 == 0:
         print(f"Divisivel por 7: {numero}")
         break
-    else:
-        int(input("Digite um número: "))
+
     
      

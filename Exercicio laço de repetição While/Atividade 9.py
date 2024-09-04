@@ -12,9 +12,7 @@ pares = 0
 while True:
     numero = int(input("Digite um número: "))
 
-    if numero % 2 == 0:
-        pares = pares + 1
-    else: 
+    if numero % 2 != 0:
         impares += 1 
         soma += numero
 

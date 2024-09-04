@@ -7,13 +7,13 @@ import os
 os.system("cls || clear")
 
 soma_da_meta = 0
-meta_diaria = 5
+meta_diaria = float(input("Defina uma meta diaria: "))
 
 while True: 
     meta = float(input("Meta diaria em horas: "))
     soma_da_meta += meta
 
     if soma_da_meta >= meta_diaria:
-        print("Tempo limite excedido.")
+        print("limite excedido.")
         print(f"Hoje você estudou por {soma_da_meta}")
         break
