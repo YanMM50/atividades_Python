@@ -6,7 +6,7 @@ Crie um programa que solicite ao usuário criar uma senha. O programa deve entã
 import os
 os.system("cls || clear")
 import time
-import sys
+
 
 senha_cadastrada = "123"
 
@@ -15,7 +15,7 @@ while True:
 
     if senha == senha_cadastrada:
         for i in range(101):
-            print(f"\rProgresso: {i}%", end="")
+            print(f"\rProcessando: {i}%", end="")
             time.sleep(0.1)
         print("\nBem-vindo!")
         break
