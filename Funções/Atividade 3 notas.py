@@ -22,4 +22,5 @@ def media(n1, contador):
 soma_media = media(soma, contador)
 
 
+
 print(f"Média: {soma_media}")

@@ -8,6 +8,7 @@ Crie um programa que leia 6 números e informe por meio de uma função
 import os
 os.system("cls || clear")
 
+
 def impar_par():
     contador_par = 0
     contador_impar = 0
