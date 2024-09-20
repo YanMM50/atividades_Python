@@ -24,10 +24,11 @@ def verificar_lista():
                 break
     return lista_valores
 
-resutado = verificar_lista()
+lista_atualizada = verificar_lista()
 
-for numero in reversed(resutado):
-    print(numero)
+print("\n=== Exibindo ===")
+for i, numero in enumerate(reversed(lista_atualizada)):
+    print(f"{len(lista_atualizada)- i}º - {numero}")
 
 
     
